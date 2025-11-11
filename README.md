@@ -58,3 +58,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.2.2
 
 - UI Image perfect
+
+### 1.4.1
+
+- Students UI perfect

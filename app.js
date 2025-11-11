@@ -15,12 +15,11 @@ import { router as routerFromUtility } from "./Utility/routes.js";
 
 import { router as routerFromSecret } from "./Secret/routes.js";
 import { router as routerFromUsers } from "./Users/routes.js";
-import { router as routerFromV1 } from "./V1/routes.js";
-import { router as routerFromSV1 } from "./SV1/routes.js";
-import { router as routerFromV2 } from "./V2/routes.js";
-import { router as routerFromSV2 } from "./SV2/routes.js";
 import { router as routerFromV3 } from "./V3/routes.js";
+import { router as routerFromSV1 } from "./SV1/routes.js";
+import { router as routerFromSV2 } from "./SV2/routes.js";
 import { router as routerFromSV3 } from "./SV3/routes.js";
+import { router as routerFromSV4 } from "./SV4/routes.js";
 
 app.use(express.static('Public'));
 app.use(cookieParser());
@@ -29,12 +28,11 @@ app.use("/Utility", routerFromUtility);
 
 app.use("/Secret", routerFromSecret);
 app.use("/Users", routerFromUsers);
-app.use("/V1", routerFromV1);
-app.use("/SV1", StartFuncFromMiddleware, routerFromSV1);
-app.use("/V2", routerFromV2);
-app.use("/SV2", StartFuncFromMiddleware, routerFromSV2);
 app.use("/V3", routerFromV3);
+app.use("/SV1", StartFuncFromMiddleware, routerFromSV1);
+app.use("/SV2", StartFuncFromMiddleware, routerFromSV2);
 app.use("/SV3", StartFuncFromMiddleware, routerFromSV3);
+app.use("/SV4", StartFuncFromMiddleware, routerFromSV4);
 
 function normalizePort(val) {
     var port = parseInt(val, 10);
