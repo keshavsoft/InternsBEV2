@@ -62,3 +62,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.4.1
 
 - Students UI perfect
+
+### 1.7.1
+
+- Students new UI perfect with secured
